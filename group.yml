@@ -1,0 +1,8 @@
+---
+ - hosts: dev
+   become: true
+   tasks:
+     - name: Create Group
+       group:
+         name: siva
+         state: present

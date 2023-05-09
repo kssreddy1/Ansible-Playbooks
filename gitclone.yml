@@ -1,0 +1,12 @@
+---
+ - hosts: all
+   become: true
+   tasks:
+     - name: Install Git
+       apt: 
+         name: git
+         state: present
+     - name: git clone
+       git: 
+        repo: https://github.com/kssreddy1/maven-web-application.git
+        dest: /root/git

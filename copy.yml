@@ -1,0 +1,8 @@
+---
+ - hosts: all
+   become: yes
+   tasks: 
+     - name: Copying Files
+       copy:
+         src: /root/1.txt
+         dest: /root

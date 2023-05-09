@@ -1,0 +1,9 @@
+---
+ - hosts: dev
+   become: yes
+   tasks:
+     - name: Create User
+       user:
+         name: samba
+         password: samba
+         shell: /bin/bash
